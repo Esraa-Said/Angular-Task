@@ -1,0 +1,54 @@
+.chart-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+ 
+  align-items: center;
+
+  width: 100%;
+}
+.chart {
+  width: 100%;
+  
+}
+
+.chart canvas {
+  width: 100% !important; /* Full width of container */
+
+}
+
+.overview-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.tab-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tab {
+  font-size: 0.9rem;
+  color: #666;
+  margin-right: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.tab.selected {
+  color: #ff6b4b;
+  font-weight: bold;
+  border-bottom: 2px solid #ff6b4b;
+}

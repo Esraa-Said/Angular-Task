@@ -1,0 +1,30 @@
+.graph-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  width: 250px;
+  float: right;
+
+  border-radius: 20px;
+  gap: 20px;
+  color: rgb(79, 94, 108);
+}
+.item {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px 10px;
+  gap: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  color: rgb(79, 94, 108);
+}
+.item-active {
+  background-color: coral;
+  color: #fff;
+}

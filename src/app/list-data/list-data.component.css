@@ -1,0 +1,94 @@
+* {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .station-container {
+    color: rgb(66, 79, 91);
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #fa5733  rgb(244, 219, 212);
+  }
+  
+
+  .station-container::-webkit-scrollbar {
+    width: 8px;
+    
+
+  }
+  
+  .station-container::-webkit-scrollbar-track {
+    background: rgb(244, 219, 212);
+    border-radius: 4px;
+
+  }
+  
+  .station-container::-webkit-scrollbar-thumb {
+    background-color: #fa5733; 
+    border-radius: 4px;
+    
+  }
+  .station-container::-webkit-scrollbar-button {
+    display: none; /* Removes scrollbar arrows  */
+   
+  }
+  
+  .station-card {
+    border: 1px solid #ebebed;
+    border-radius: 3px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  .station-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ebebed;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .station-name {
+    margin-bottom: -15px;
+  }
+  
+  .three-dots {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+  .station-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px 0 30px 0;
+  }
+  
+  .section-details-enter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+  }
+  
+  .section-details-enter h4 {
+    margin: 0;
+    font-size: 13px;
+   
+    flex-basis: 50%;
+  }
+  
+  .section-details-enter p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    flex-basis: 45%;
+  color: rgb(52, 62, 72);
+  }
+  

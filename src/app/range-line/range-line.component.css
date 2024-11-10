@@ -1,0 +1,17 @@
+.range-line {
+  height: 8px;
+  background-color: coral;
+  transition: width 0.2s ease;
+  border-radius: 5px;
+}
+
+div {
+  height: 8px;
+  border-radius: 5px;
+}
+.full {
+  background-color: rgb(244, 219, 212);
+}
+.empty {
+  background-color: rgb(188, 220, 240);
+}

@@ -1,0 +1,61 @@
+<div class="boxes">
+  <div
+    class="box"
+    *ngFor="let item of list; let i = index"
+    [ngClass]="i == 0 ? 'first-box' : 'other-box'"
+  >
+    <h2>
+      {{ item.value | number }}
+      <ng-container *ngIf="i == 0; else m3">
+        <span style="font-weight: 400; font-size: 16px">EGP</span>
+      </ng-container>
+      <ng-template #m3>
+        <ng-container *ngIf="i !== 3">
+          <span style="font-weight: 400; font-size: 16px">m<sup>3</sup></span>
+        </ng-container>
+      </ng-template>
+    </h2>
+    <h3>{{ item.title }}</h3>
+
+    <p>
+      <ng-container *ngIf="i === 0; else mCubed">
+        <span>
+          <fa-icon [icon]="faCaretDown" size="1x" style="color: coral">
+          </fa-icon>
+        </span>
+        <span style="color: coral">{{ item.percentage }}</span>
+      </ng-container>
+
+      <ng-template #mCubed>
+        <ng-container *ngIf="i === 1 || i === 2; else noIcon">
+          <span>
+            <fa-icon
+              [icon]="i === 1 ? faCaretUp : faCaretDown"
+              size="1x"
+              [ngStyle]="{ color: i === 1 ? 'rgb(80, 229, 255)' : 'coral' }"
+            >
+            </fa-icon>
+          </span>
+          <span [ngStyle]="{ color: i === 1 ? 'rgb(80, 229, 255)' : 'coral' }">
+            {{ item.percentage }} m<sup
+              [ngStyle]="{ color: i === 1 ? 'rgb(80, 229, 255)' : 'coral' }"
+              >3</sup
+            >
+          </span>
+        </ng-container>
+
+        <ng-template #noIcon>
+          <span>
+            <fa-icon
+              [icon]="faCaretUp"
+              size="1x"
+              style="color: rgb(80, 229, 255)"
+            >
+            </fa-icon>
+          </span>
+          <span style="color: rgb(80, 229, 255)">{{ item.percentage }}</span>
+        </ng-template>
+      </ng-template>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  height: 60px;
+
+}
+
+
+.toolbar-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-one-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 12px;
+}
+
+
+
+.time-toggle {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  display: flex;
+  gap: 20px;
+}
+/* Time toggle buttons */
+.time-toggle .time-button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #999;
+
+  transition: background-color 0.3s;
+}
+
+.time-toggle .time-button:hover {
+  background-color: #e0e0e0;
+}
+
+.time-toggle .time-button.active {
+  background-color: #ff7043;
+  color: #fff;
+}
+
+/* Date selectors styling */
+.date-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  border-bottom: 1px solid #333;
+
+}
+
+.date-input {
+  border: none;
+  padding: 5px;
+  outline: none;
+  background-color: transparent;
+  width: 120px;
+  color: #333;
+}
+
+
+.section-one-content{
+  color: rgb(79, 94, 108);
+}

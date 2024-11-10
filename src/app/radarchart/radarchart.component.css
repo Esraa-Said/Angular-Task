@@ -1,0 +1,17 @@
+div {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+canvas {
+  max-width: 200px;
+  max-height: 200px;
+  margin: auto;
+}
+h3 {
+  color: rgb(79, 94, 108);
+
+}

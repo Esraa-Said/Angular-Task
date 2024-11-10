@@ -1,0 +1,77 @@
+<div class="station-container">
+  <div class="station-card" *ngFor="let station of list">
+    <div class="station-header">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        [attr.fill]="station.value === 0 ? 'rgb(188, 220, 240)' : '#ff7043'"
+        class="bi bi-dot"
+        viewBox="0 0 7 12"
+      >
+        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+      </svg>
+      <div>
+        <fa-icon
+          [icon]="faCar"
+          style="font-size: 24px"
+          [ngStyle]="{
+            color: station.value === 0 ? 'rgb(188, 220, 240)' : '#ff7043'
+          }"
+        ></fa-icon>
+        <fa-icon
+          [icon]="faGasPump"
+          style="font-size: 24px"
+          [ngStyle]="{
+            color: station.value === 0 ? 'rgb(188, 220, 240)' : '#ff7043'
+          }"
+        ></fa-icon>
+      </div>
+      <h3 class="station-name">
+        STATION NAME<br />
+        DUMMY
+      </h3>
+      <div class="three-dots">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-three-dots"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+        />
+      </svg>
+    </div>
+    </div>
+
+    <div class="station-details">
+      <div class="section-details-enter">
+        <h4>Total Sales</h4>
+        <p>{{ station.sales }} m<sup>3</sup></p>
+      </div>
+      <div class="section-details-enter">
+        <h4>Compression State</h4>
+        <p>{{ station.compression }}</p>
+      </div>
+      <div class="section-details-enter">
+        <h4>Max Transaction / hour</h4>
+        <p>{{ station.mTransactionHour }}</p>
+      </div>
+      <div class="section-details-enter">
+        <h4>Total Value</h4>
+        <p>{{ station.value }} EGP</p>
+      </div>
+      <div class="section-details-enter">
+        <h4>Total Transaction Count</h4>
+        <p>{{ station.transactionCount }}</p>
+      </div>
+      <div class="section-details-enter">
+        <h4>Max Transaction Date-Time</h4>
+        <p>{{ station.mTransactionDateTime }}</p>
+      </div>
+    </div>
+  </div>
+</div>

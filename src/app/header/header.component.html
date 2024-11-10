@@ -1,0 +1,135 @@
+<div class="toolbar">
+  <div class="toolbar-section section-one">
+    <div class="section-one-content">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="#ff7043"
+        class="bi bi-dot"
+        viewBox=" 0 0 7 12"
+      >
+        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+      </svg>
+      <div>
+        <fa-icon [icon]="faCar" style="font-size: 17px"></fa-icon>
+
+        <fa-icon [icon]="faGasPump" style="font-size: 17px"></fa-icon>
+      </div>
+    </div>
+    <div class="section-one-content" style="font-size: 19px; font-weight: bold">
+      2/3
+    </div>
+    <div class="section-one-content">Monitored<br />Stations</div>
+
+    <div class="section-one-content">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="#ff7043"
+        class="bi bi-dot"
+        viewBox="0 0 7 12"
+      >
+        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        class="bi bi-arrow-clockwise"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+        />
+        <path
+          d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
+        />
+      </svg>
+    </div>
+    <div class="section-one-content" style="font-size: 19px; font-weight: bold">
+      20s
+    </div>
+    <div class="section-one-content">Last<br />Update</div>
+  </div>
+
+  <div class="toolbar-section time-toggle">
+    <button class="time-button active">TODAY</button>
+    <button class="time-button">YESTERDAY</button>
+    <button class="time-button">LAST WEEK</button>
+  </div>
+
+  <div class="toolbar-section date-selectors">
+    <span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="24"
+        fill="#ff7043"
+        class="bi bi-caret-right-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+        />
+      </svg>
+    </span>
+    <label class="date-label">
+      <input type="text" placeholder="Start date - time" class="date-input" />
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-calendar3"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"
+          />
+          <path
+            d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+          />
+        </svg>
+      </span>
+    </label>
+    <span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="24"
+        fill="#ff7043"
+        class="bi bi-caret-right-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+        />
+      </svg>
+    </span>
+    <label class="date-label">
+      <input type="text" placeholder="End date - time" class="date-input" />
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-calendar3"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"
+          />
+          <path
+            d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+          />
+        </svg>
+      </span>
+    </label>
+  </div>
+</div>

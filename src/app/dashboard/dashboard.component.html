@@ -1,0 +1,22 @@
+<div class="dashboard-container">
+  <app-sidebar></app-sidebar>
+  <div class="main-content">
+    <app-header></app-header>
+    <div class="content-area">
+      <app-statistics></app-statistics>
+      <app-graph-list
+        [activeButton]="activeButton"
+        (graphView)="showGraph()"
+        (listView)="showList()"
+      ></app-graph-list>
+      <div class="graph-list">
+        <app-graph-data *ngIf="activeButton === 'graph'"></app-graph-data>
+        <app-list-data *ngIf="activeButton === 'list'"></app-list-data>
+      </div>
+      <div class="side-right">
+        <app-radarchart></app-radarchart>
+        <app-station-sales></app-station-sales>
+      </div>
+    </div>
+  </div>
+</div>
